@@ -4,41 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/colors.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/colors.css">
   
   <title>Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 <main>
-  <div class="data">
-    <label for="Day">Day</label> <input type="number" name="Day" id="Day" placeholder=" DD">
+  <div class="input-dice">
+    <form>
+      <div class="Day field">
+        <label for="Day">DAY</label>
+        <input type="number" name="Day" id="Day" placeholder=" DD">
+      </div>
 
-    <label for="MM">Month</label> <input type="number" name="MM" id="MM" placeholder="MM">
+      <div class="MM field">
+        <label for="MM">MONTH</label>
+        <input type="number" name="MM" id="MM" placeholder="MM">
+      </div>
 
-    <label for="YY">Year</label> <input type="number" name="YY" id="YY" placeholder="YYYY">
+      <div class="YY field">
+        <label for="YY">YEAR</label>
+        <input type="number" name="YY" id="YY" placeholder="YYYY">
+      </div>
+
+      <div class="bnt-field">
+        <div class="line">
+          <hr>
+        </div>
+
+        <button type="submit" id="bnt-input">
+          <img src="src/assets/images/icon-arrow.svg" alt="set-img">
+        </button>
+      </div>
+    </form>
   </div>
 
-  <div>
-    <span class="roxo">--</span> years
-    <span class="roxo">--</span> months
-    <span class="roxo">--</span> days
+  <div class="output-dice">
+    <h1>
+      <span class="roxo">--</span> 
+      years
+    </h1>
+    
+    <h1>
+      <span class="roxo">--</span> 
+      months
+    </h1>
+
+    <h1>
+      <span class="roxo">--</span> 
+      days
+    </h1>
   </div>
 
 
 
 </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
