@@ -129,3 +129,10 @@ button:hover {
     display: none;
 }
 
+
+
+@media (max-width: 700px) {
+    html {
+        background-color: blue;
+    }
+}
