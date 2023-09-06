@@ -3,6 +3,7 @@ let Current_Date = new Date();
 const DD =  window.document.querySelector('span.DD');
 const MM = window.document.querySelector('span.MM');
 const YY = window.document.querySelector('span.YY');
+const span = window.document.querySelector('.AlertHiden')
 
 function bntInput() {
     let Day = Number(window.document.querySelector('#Day').value);
