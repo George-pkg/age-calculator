@@ -3,7 +3,7 @@ let Current_Date = new Date();
 const DD =  window.document.querySelector('span.DD');
 const MM = window.document.querySelector('span.MM');
 const YY = window.document.querySelector('span.YY');
-const span = window.document.querySelector('.AlertHiden')
+const span = window.document.querySelectorAll('.Alert')
 
 function bntInput() {
     let Day = Number(window.document.querySelector('#Day').value);
@@ -11,18 +11,30 @@ function bntInput() {
     let Year = Number(window.document.querySelector('#YY').value);
 
     if (Day <= 31 && Day >= 1) {
+        span[0].classList.add("Hiden")
         if(Mouth <= 12 && Mouth >= 1){
+            span[1].classList.add("Hiden")
             if(Year <= Current_Date.getUTCFullYear() && Year >= (Current_Date.getUTCFullYear() - 110)) {
+                span[2].classList.add("Hiden")
                 CalculateDay()
+            } else {
+                span[2].classList.remove("Hiden")
+            }
+        } else {
+            for (num = 1; num < 3; num++) {
+                span[num].classList.remove("Hiden")
+                console.log(num);
             }
         }
-    }else {
-        
+    } else {
+        for (let num = 0; num < 3; num++) {
+            span[num].classList.remove("Hiden")
+            console.log(num);
+        }
     }
     
 
     console.log(Day, Mouth, Year);
-    console.log(Current_Date.getUTCDate());
 }
 
 function CalculateDay() {
