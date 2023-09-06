@@ -71,7 +71,7 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-span {
+span.roxo {
     color: var(--purple);
 }
 
@@ -117,5 +117,9 @@ button:hover {
 .output-dice {
     font: italic 27pt xx-large;
     margin: 10px 20px 20px 30px;
+}
+
+.AlertHiden {
+    font:  17pt xx-large;
 }
 
