@@ -154,9 +154,7 @@ button:hover {
         padding: 10px 5px 10px 15px;
         height: 48px;
         width: 92px;
-        font-size: 24pt;
-        border-radius: 10px;
-        cursor: pointer;
-        margin-top: 3px;
+        font-size: 18pt;
+    }
     
 }
