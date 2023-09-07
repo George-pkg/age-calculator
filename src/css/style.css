@@ -42,7 +42,7 @@ html, body {
 main {
     margin: auto;
     height: 575px;
-    width: 800px;
+    width: 760px;
     border-radius: 30px 30px 200px 30px;
     background-color: #ffff;
 }
@@ -97,7 +97,7 @@ label {
 }
 
 button {
-    width: 80px;
+    width: 85px;
     height: 70px;
     border-radius: 100%;
     border: none;
@@ -110,7 +110,7 @@ button:hover {
 }
 
 .field {
-    width: 220px;
+    width: 200px;
     align-items: start;
 }
 
@@ -131,8 +131,32 @@ button:hover {
 
 
 
-@media (max-width: 700px) {
-    html {
-        background-color: blue;
+@media screen and (max-width: 780px) {
+    main {
+        width: 720px;
     }
+}
+
+@media screen and (max-width: 725px) {
+    main {
+        width: 420px;
+    }
+
+    .field {
+        width: 110px;
+    }
+
+    .input-dice {
+        margin: 30px 60px 10px 30px;
+    }
+
+    input {
+        padding: 10px 5px 10px 15px;
+        height: 48px;
+        width: 92px;
+        font-size: 24pt;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 3px;
+    
 }
