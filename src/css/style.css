@@ -156,18 +156,19 @@ button:hover {
 @media screen and (max-width: 725px) {
     main {
         width: 420px;
+        height: 550px;
     }
 
     .field {
-        width: 110px;
+        width: 120px;
     }
 
     .input-dice {
-        margin: 30px 60px 10px 30px;
+        margin: 30px 30px 10px 30px;
     }
 
     .line {
-        width: 140px;
+        width: 150px;
     }
 
     .hiden {
@@ -181,13 +182,18 @@ button:hover {
 
     .bnt-field {
         justify-content: start;
+        margin-top: 30px;
     }
 
     input {
-        padding: 10px 5px 10px 15px;
+        padding: 10px 5px 10px 10px;
         height: 48px;
         width: 92px;
         font-size: 18pt;
+    }
+
+    .Alert {
+        font-size: .6em;
     }
 
     .output-dice {
