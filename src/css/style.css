@@ -25,6 +25,9 @@
 
 */
 
+
+/* CSS GLOBAL */
+
 * {
     padding: 0;
     margin: 0;
@@ -39,6 +42,8 @@ html, body {
     min-height: 100vh;
 }
 
+/* PAGE BODY  */
+
 main {
     margin: auto;
     height: 575px;
@@ -52,6 +57,10 @@ form {
     flex-wrap: wrap;
 }
 
+
+/* INPUT */
+
+
 input {
     padding: 10px 5px 10px 15px;
     height: 65px;
@@ -63,12 +72,22 @@ input {
     border-color: hsl(0, 0%, 86%);
 }
 
+.input-dice {
+    margin: 50px 60px 10px 60px;
+    color: hsl(0, 1%, 44%);
+}
+
 input:hover {
     border-color: var(--purple);
 }
 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+.field {
+    width: 200px;
+    align-items: start;
 }
 
 span.roxo {
@@ -79,10 +98,20 @@ label {
     letter-spacing: 3px;
 }
 
-.input-dice {
-    margin: 50px 60px 10px 60px;
-    color: hsl(0, 1%, 44%);
+/* ALERT INPUT */
+
+.Alert {
+    color: var(--light-red);
+    font-size: 0.8rem;
+    font-style: italic;
 }
+
+.Hiden, .hiden {
+    display: none;
+}
+
+
+/* BUTTON */
 
 .line {
     width: 700px;
@@ -109,24 +138,11 @@ button:hover {
     cursor: pointer;
 }
 
-.field {
-    width: 200px;
-    align-items: start;
-}
+/* OUTPUT */
 
 .output-dice {
     font: italic 27pt xx-large;
     margin: 10px 20px 20px 30px;
-}
-
-.Alert {
-    color: var(--light-red);
-    font-size: 0.8rem;
-    font-style: italic;
-}
-
-.Hiden {
-    display: none;
 }
 
 
@@ -150,11 +166,32 @@ button:hover {
         margin: 30px 60px 10px 30px;
     }
 
+    .line {
+        width: 140px;
+    }
+
+    .hiden {
+        display: unset;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .bnt-field {
+        justify-content: start;
+    }
+
     input {
         padding: 10px 5px 10px 15px;
         height: 48px;
         width: 92px;
         font-size: 18pt;
+    }
+
+    .output-dice {
+        font: italic 25pt xx-large;
     }
     
 }
